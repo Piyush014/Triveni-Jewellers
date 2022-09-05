@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
+    <script
+      src="https://kit.fontawesome.com/bff697edfd.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Login / Register</title>
+  </head>
+  <body>
+      <div class="header">
+        <div class="contain">
+        <div class="navbar">
+          <div class="logo">
+            <img src="images/logo.png" alt="" width="186px;">
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"><img src="images/cart.png" width="30px;" height="30px;" alt=""></a>
+          <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+        </div>
+        </div>
+      </div>
+
+<br>
+<br>
+    <br>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="./index.html">
+          <h1>Create Account</h1>
+          <br>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <br>
+          <button>Sign Up</button>
+          <br>
+          <hr width="25%;">
+          <span>Or Sign Up using</span>
+          <br>
+          <div class="social-container">
+            <a href="https://www.facebook.com/login/" class="social"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="./index.html">
+          <h1>Sign in</h1>
+          <br>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <a href="#">Forgot your password?</a>
+          <button>Sign In</button>
+          <br>
+          <hr width="25%;">
+          <h6>Or Login with</h6>
+          <div class="social-container">
+            <a href="https://www.facebook.com/login/" class="social"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>
+              To keep connected with us please login with your personal information
+            </p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <script src="./login.js"></script>
+    <!--------- footer --------->
+
+    <div class="footer">
+      <div class="contain">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App.</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="">
+              <img src="images/app-store.png" alt="">
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo.png" alt="">
+            <p>Our Purpose is to Sustainably make the pleasure and Benifits of Jewelry to the many.</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>FaceBook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - Triveni Jewellers</p>
+      </div>
+    </div>
+
+    <!--------- js for toggle menu --------->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        }
+        else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
